@@ -17,6 +17,7 @@ app.use('/api/stuff', stuffRoutes);
 app.use('/api/auth', userRoutes);
 app.use('/images', express.static(path.join(__dirname, 'images')));
 
+// credentials revoked
 mongoose.connect('mongodb+srv://biboundee:biboundee@cluster0.a5y1q.mongodb.net/test?retryWrites=true&w=majority',
     { useNewUrlParser: true,
       useUnifiedTopology: true })
